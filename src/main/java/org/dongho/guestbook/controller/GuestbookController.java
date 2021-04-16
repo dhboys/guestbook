@@ -25,7 +25,7 @@ public class GuestbookController {
         log.info("---------------------------");
         log.info(serivce.getList(pageRequestDTO));
 
-        model.addAttribute("list" , serivce.getList(pageRequestDTO));
+        model.addAttribute("result" , serivce.getList(pageRequestDTO));
 
         return "/guestbook/list";
     }
